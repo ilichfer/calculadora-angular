@@ -7,4 +7,21 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'calculadora';
+
+  frase = 'Calculadora Personalizada de ilich';
+  res;
+  Resta: number;
+
+  onCalcular(calcular: number) {
+
+    if (calcular == 89.9) {
+      this.res = 'no se puede realizar la operacion';
+    } else {
+      this.res = calcular;
+    }
+
+
+  }
+
+
 }
